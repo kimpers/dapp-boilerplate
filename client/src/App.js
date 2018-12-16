@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import SimpleStorageContract from "./contracts/SimpleStorage.json";
+import DaicaContract from "./contracts/Daica.json";
 import getWeb3 from "./utils/getWeb3";
 import truffleContract from "truffle-contract";
 
-import "./App.css";
-
 class App extends Component {
-  state = { storageValue: 0, web3: null, accounts: null, contract: null };
+  state = { web3: null, accounts: null, contract: null };
 
   componentDidMount = async () => {
     try {
@@ -17,13 +15,25 @@ class App extends Component {
       const accounts = await web3.eth.getAccounts();
 
       // Get the contract instance.
-      const Contract = truffleContract(SimpleStorageContract);
+      const Contract = truffleContract(DaicaContract);
       Contract.setProvider(web3.currentProvider);
       const instance = await Contract.deployed();
 
+      const currentAccount = accounts[0];
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance }, this.runExample);
+      this.setState(
+        { web3, accounts, contract: instance, currentAccount },
+        this.runExample
+      );
+
+      // Pull for changes of current account
+      this.accountChecker = setInterval(async () => {
+        const accounts = await web3.eth.getAccounts();
+        if (accounts[0] !== this.state.currentAccount) {
+          this.setState({ accounts, currentAccount: accounts[0] });
+        }
+      }, 500);
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -33,17 +43,17 @@ class App extends Component {
     }
   };
 
+  componentWillUnmount = () => {
+    clearInterval(this.accountChecker);
+  };
+
   runExample = async () => {
-    const { accounts, contract } = this.state;
+    const { contract } = this.state;
 
-    // Stores a given value, 5 by default.
-    await contract.set(5, { from: accounts[0] });
-
-    // Get the value from the contract to prove it worked.
-    const response = await contract.get();
+    const response = await contract.hello();
 
     // Update state with the result.
-    this.setState({ storageValue: response.toNumber() });
+    this.setState({ message: response });
   };
 
   render() {
@@ -53,16 +63,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Good to Go!</h1>
-        <p>Your Truffle Box is installed and ready.</p>
-        <h2>Smart Contract Example</h2>
-        <p>
-          If your contracts compiled and migrated successfully, below will show
-          a stored value of 5 (by default).
-        </p>
-        <p>
-          Try changing the value stored on <strong>line 40</strong> of App.js.
-        </p>
-        <div>The stored value is: {this.state.storageValue}</div>
+        <div>The stored value is: {this.state.message}</div>
+        <div>{this.state.accounts[0]}</div>
       </div>
     );
   }
