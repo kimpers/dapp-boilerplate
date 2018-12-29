@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import idx from "idx";
+import { ThemeProvider, Heading } from "rimble-ui";
 import { DrizzleContext } from "drizzle-react";
 
 class App extends Component {
@@ -21,9 +22,11 @@ class App extends Component {
     const helloValue = idx(Daica, _ => _.hello[helloKey].value);
 
     return (
-      <div>
-        <h1>{helloValue}</h1>
-      </div>
+      <ThemeProvider>
+        <div>
+          <Heading.h1>{helloValue}</Heading.h1>
+        </div>
+      </ThemeProvider>
     );
   }
 }
