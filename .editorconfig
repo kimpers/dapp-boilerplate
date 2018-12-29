@@ -19,4 +19,4 @@ indent_style = space
 indent_size = 2
 
 [**.sol]
-indent_size = 4<Paste>
+indent_size = 4
