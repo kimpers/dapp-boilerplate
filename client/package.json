@@ -7,6 +7,7 @@
     "drizzle-react": "^1.2.0",
     "drizzle-react-components": "^1.2.0",
     "idx": "^2.5.2",
+    "ramda": "^0.26.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
