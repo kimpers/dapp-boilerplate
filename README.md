@@ -19,3 +19,8 @@
 5. Verify that everything works by going to `http://localhost:3000`
 6. Delete `.git` folder and create your own repository
 7. Start hacking 🎉
+
+## Deploy to Cloudflare IPFS gateway
+1. start IPFS daemon locally `ipfs daemon`
+2. `cd` into `client` folder
+3.  Run deploy command `./deploy-ipfs.sh`
