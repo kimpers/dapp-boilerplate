@@ -9,6 +9,7 @@
 * [Rimble](https://rimble.consensys.design)
 * [Ramda](https://ramdajs.com)
 * [idx](https://github.com/facebookincubator/idx)
+* [truffle-assertions](https://github.com/rkalis/truffle-assertions)
 
 ## Usage
 1. Clone repo

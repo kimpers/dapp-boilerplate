@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "openzeppelin-solidity": "^2.1.1"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "prettier": "^1.15.3",
+    "truffle-assertions": "^0.8.0",
+    "truffle-hdwallet-provider": "^1.0.3"
+  }
+}
