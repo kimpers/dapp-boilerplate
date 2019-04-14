@@ -645,9 +645,9 @@ balanced-match@^1.0.0:
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
 bindings@^1.3.1:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.4.0.tgz#909efa49f2ebe07ecd3cb136778f665052040127"
-  integrity sha512-7znEVX22Djn+nYjxCWKDne0RRloa9XfYa84yk3s+HkE3LpDYZmhArYr9O9huBoHY3/oXispx5LorIX7Sl2CgSQ==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
+  integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
 
@@ -683,9 +683,9 @@ convert-source-map@^1.5.1:
     safe-buffer "~5.1.1"
 
 core-js@^2.4.0, core-js@^2.5.0:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.2.tgz#267988d7268323b349e20b4588211655f0e83944"
-  integrity sha512-NdBPF/RVwPW6jr0NCILuyN9RiqLo2b1mddWHkUL+VnvcB7dzlnBJ1bXYntjpTGOgkZiiLWj2JxmOr7eGE3qK6g==
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
+  integrity sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==
 
 debug@^2.2.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -817,9 +817,9 @@ ms@2.0.0:
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
 nan@^2.11.0:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.12.1.tgz#7b1aa193e9aa86057e3c7bbd0ac448e770925552"
-  integrity sha512-JY7V6lRkStKcKTvHO5NVSQRv+RV+FIL5pvDoLiAtSL9pKlC5x9PKQcZDsq7m4FO4d57mkhC6Z+QhAh3Jdk5JFw==
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
+  integrity sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==
 
 number-is-nan@^1.0.0:
   version "1.0.1"
@@ -827,9 +827,9 @@ number-is-nan@^1.0.0:
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
 openzeppelin-solidity@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/openzeppelin-solidity/-/openzeppelin-solidity-2.1.2.tgz#94e2bb92b60e91abb22c6fe27d983d92850fb324"
-  integrity sha512-1ggh+AZFpMAgGfgnVMQ8dwYawjD2QN4xuWkQS4FUbeUz1fnCKJpguUl2cyadyfDYjBq1XJ6MA6VkzYpTZtJMqw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/openzeppelin-solidity/-/openzeppelin-solidity-2.2.0.tgz#1f0e857f53bda29b77a8e72f9a629db81015fd34"
+  integrity sha512-HfQq0xyT+EPs/lTWEd5Odu4T7CYdYe+qwf54EH28FQZthp4Bs6IWvOlOumTdS2dvpwZoTXURAopHn2LN1pwAGQ==
 
 os-homedir@^1.0.0:
   version "1.0.2"
@@ -847,9 +847,9 @@ path-is-absolute@^1.0.1:
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 prettier@^1.15.3:
-  version "1.16.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
-  integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.0.tgz#53b303676eed22cc14a9f0cec09b477b3026c008"
+  integrity sha512-sXe5lSt2WQlCbydGETgfm1YBShgOX4HxQkFPvbxkcwgDvGDeqVau8h+12+lmSVlP3rHPz0oavfddSZg/q+Szjw==
 
 private@^0.1.6, private@^0.1.8:
   version "0.1.8"
@@ -953,16 +953,16 @@ trim-right@^1.0.1:
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
 truffle-assertions@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/truffle-assertions/-/truffle-assertions-0.8.0.tgz#64b7844601bf5e8c0885a282f6a864dcc38f61c2"
-  integrity sha512-Yl99rj8s3/9RMvsCtBhrpYk+68tw+rPoGy4PDuI5FJJNpG89boDWS5ybyKSMD+JDTPjXJHwsILo6+OQAwGqYZg==
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/truffle-assertions/-/truffle-assertions-0.8.2.tgz#6f0fda2cbc9f9dae597d6a1c81c28bdf7fe85595"
+  integrity sha512-WpUlGMsttkNHuIRYk7Th3I/4d2TeCxDhQI2ZiY+poI8dtfii4seIMXATB9aQLHU+uHAKWxpRJcTzZzm2zl/JnA==
   dependencies:
     assertion-error "^1.1.0"
 
 truffle-hdwallet-provider@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/truffle-hdwallet-provider/-/truffle-hdwallet-provider-1.0.4.tgz#f00ea8dbf8c243dad551f3f68813e09d159c8174"
-  integrity sha512-Z9LzA+SMH2kH52WJEcIoIbo+OY6aO4/uVCxqEIo0J+pJ4COuGLlLkM74pA6JAEf8Dr9o7sDtxMvuA7qbgjPhvQ==
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/truffle-hdwallet-provider/-/truffle-hdwallet-provider-1.0.6.tgz#7cda437c9a25bda6bbc5f4ed018e932254ecc867"
+  integrity sha512-cYTG0t9XouLLEBLMjkfHe3s2JO9wrFFVeXEgpW5Ay+8S56isf3LkrAUh0ws9bcYCJ0l7jho9xkaNnakeDqq//Q==
   dependencies:
     any-promise "^1.3.0"
     bindings "^1.3.1"
